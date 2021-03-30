@@ -29,7 +29,7 @@ public class InfoAdicionalToken implements TokenEnhancer{
 			user = usuarioService.retriveUser(authentication.getName());
 			log.info(String.format("Nombre: %s", user.getNombre()));
 			log.info(String.format("apellidos: %s", user.getApellido()));
-			log.info(String.format("corre: %s", user.getEmail()));
+			log.info(String.format("correo: %s", user.getEmail()));
 		} catch (Exception e) {
 			e.printStackTrace();			
 		}
