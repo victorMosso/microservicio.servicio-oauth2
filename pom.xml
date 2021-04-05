@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.udemy.ms.springboot.app.oauth</groupId>
-	<artifactId>springboot.app.oauth</artifactId>
+	<artifactId>springboot.microservicio.oauth</artifactId>
 	<version>v.1.0</version>
 	<name>springboot.microservicio.oauth</name>
 	<description>Servidor de Autorizacion</description>
@@ -75,6 +75,15 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-amqp</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-rabbit-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
